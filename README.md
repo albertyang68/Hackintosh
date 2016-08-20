@@ -15,10 +15,11 @@ DSDT.aml: follow the guide https://github.com/shmilee/T450-Hackintosh
 What has been done:
 
 1. Clover config.plist
-2. To fix brightness: 
+2. To fix brightness:
   1. We have to patch the AppleIntelBDWGraphicsFramebuffer binary file in /S/L/E/AppleIntelBDWGraphicsFramebuffer.kext/Contents/MacOS/.
      Use app:HexFiend, find 39CF763C and replace it with 39CFEB3C for 10.10.x, replace 4139c4763e with 4139c4eb3e for 10.11.x.
   2. Do not use fakeID 0x16160002
   3. Use PatchAppleMacklight_v2, run on destination laptop and get the native brightness kext and put in kext/other/
   4. dsdt.aml should patch brightness_fix for hassel
 3. To fix audio: dsdt.aml
+                 install Voo..HDA, google and download it
