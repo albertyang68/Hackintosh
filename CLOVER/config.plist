@@ -10,13 +10,6 @@
 			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
-			<key>Fixes</key>
-			<dict>
-				<key>FixRegions_10000000</key>
-				<true/>
-				<key>NewWay_80000000</key>
-				<true/>
-			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
 			<key>Patches</key>
@@ -212,34 +205,18 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio, port 0204, 0x16060000 0x160e0000 0x16160000 0x161e0000 0x16260000 0x162b0000 0x16220000</string>
+				<string>HDMI-audio, port 0204, 0x16060002 0x16060002 0x16160002 0x16260002 0x16220002 0x162b0002 0x162b0004 0x16260004 0x16220007 0x162b0008 0x16260008</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				AgQJAAAIAACCAAAA
+				AgQJAAAEAAAHBQAA
 				</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AgQJAAAIAACCAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0204, 0x160e0001 0x161e0001 (1 of 2)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AQAeFgECAgIAACACAABQAQ==
-				</data>
-				<key>Name</key>
-				<string>AppleIntelBDWGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQAeFgEDAwMAACACAABQAQ==
 				</data>
 			</dict>
 			<dict>
@@ -262,7 +239,7 @@
 				<key>Comment</key>
 				<string>HDMI-audio, port 0105, 0x16120003 0x16120005 0x16120006 0x16260006</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AQULAAAEAAAHBQAA
@@ -276,41 +253,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Realtek ALC3232</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hQjsEA==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>HDMI-audio, port 0204, 0x16120003 0x16120005 0x16120006 0x16260006</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				AgQLAAAEAAAHBQAA
@@ -324,12 +269,12 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio, port 0105, 0x160e0001 0x161e0001</string>
+				<string>HDMI-audio, port 0105, 0x16060002 0x16060002 0x16160002 0x16260002 0x16220002 0x162b0002 0x162b0004 0x16260004 0x16220007 0x162b0008 0x16260008</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				AQUJAAAEAAABEAAA
+				AQUJAAAEAAAHBQAA
 				</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
@@ -356,12 +301,44 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio, port 0105, 0x16060000 0x160e0000 0x16160000 0x161e0000 0x16260000 0x162b0000 0x16220000</string>
+				<string>HDMI-audio, port 0204, 0x160e0001 0x161e0001 (2 of 2)</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				AQUJAAQAAAAEAAAA
+				/wAAAAEAAABAAAAAAAA=
+				</data>
+				<key>Name</key>
+				<string>AppleIntelBDWGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AgQJAAAIAACCAAAA/wA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.11-BCM94352-5GHz-US-FCC-dv</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				QYP8/3QsSA==
+				</data>
+				<key>Name</key>
+				<string>AirPortBrcm4360</string>
+				<key>Replace</key>
+				<data>
+				ZscGVVPrKw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio, port 0105, 0x160e0001 0x161e0001</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAAABEAAA
 				</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
@@ -372,44 +349,12 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.beta ( (based on Austere.J patch)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				QTnEdj4=
-				</data>
-				<key>Name</key>
-				<string>AppleIntelBDWGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				QTnE6z4=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Realtek ALC3232</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hBnUEQ==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				kgLsEA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>HDMI-audio, port 0105, 0x16060002 0x16060002 0x16160002 0x16260002 0x16220002 0x162b0002 0x162b0004 0x16260004 0x16220007 0x162b0008 0x16260008</string>
+				<string>HDMI-audio, port 0105, 0x16060000 0x160e0000 0x16160000 0x161e0000 0x16260000 0x162b0000 0x16220000</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				AQUJAAAEAAAHBQAA
+				AQUJAAQAAAAEAAAA
 				</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
@@ -436,50 +381,114 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.10.x (based on Austere.J patch)</string>
+				<string>Realtek ALC3232</string>
 				<key>Disabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
-				Oc92PA==
+				hQjsEA==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.11-BT4LE-Handoff-Hotspot-lisai9093</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIX/dEdIiwc=
+				</data>
+				<key>Name</key>
+				<string>IOBluetoothFamily</string>
+				<key>Replace</key>
+				<data>
+				Qb4PAAAA60Q=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.beta ( (based on Austere.J patch)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				QTnEdj4=
 				</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
-				Oc/rPA==
+				QTnE6z4=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio, port 0204, 0x160e0001 0x161e0001 (2 of 2)</string>
+				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				/wAAAAEAAABAAAAAAAA=
+				AEFQUExFIFNTRAA=
+				</data>
+				<key>Name</key>
+				<string>IOAHCIBlockStorage</string>
+				<key>Replace</key>
+				<data>
+				AAAAAAAAAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>HDMI-audio, port 0204, 0x160e0001 0x161e0001 (1 of 2)</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AQAeFgECAgIAACACAABQAQ==
 				</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
-				AgQJAAAIAACCAAAA/wA=
+				AQAeFgEDAwMAACACAABQAQ==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>HDMI-audio, port 0204, 0x16060002 0x16060002 0x16160002 0x16260002 0x16220002 0x162b0002 0x162b0004 0x16260004 0x16220007 0x162b0008 0x16260008</string>
+				<string>HDMI-audio, port 0204, 0x16060000 0x160e0000 0x16160000 0x161e0000 0x16260000 0x162b0000 0x16220000</string>
 				<key>Disabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				AgQJAAAEAAAHBQAA
+				AgQJAAAIAACCAAAA
 				</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
 				<key>Replace</key>
 				<data>
 				AgQJAAAIAACCAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Realtek ALC3232</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				hBnUEQ==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				kgLsEA==
 				</data>
 			</dict>
 		</array>
@@ -494,11 +503,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>03/24/2015</string>
+		<string>02/22/16</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBA72.88Z.0099.A00.1503241329</string>
+		<string>MBA71.88Z.0166.B12.1602221953</string>
 		<key>Board-ID</key>
 		<string>Mac-937CB26E2E02BB01</string>
 		<key>BoardManufacturer</key>
@@ -506,11 +515,11 @@
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
+		<string>Air-Enclosure</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x09</string>
+		<string>10</string>
 		<key>Family</key>
 		<string>MacBook Air</string>
 		<key>Manufacturer</key>
@@ -525,30 +534,46 @@
 					<key>Frequency</key>
 					<string>1600</string>
 					<key>Part</key>
-					<string>Unknown</string>
+					<string>CT102464BF160B.M16FE</string>
+					<key>Serial</key>
+					<string>0E00010B06070B00</string>
+					<key>Size</key>
+					<string>8192</string>
+					<key>Slot</key>
+					<string>1</string>
+					<key>Type</key>
+					<string>DDR3</string>
+					<key>Vendor</key>
+					<string>Crucial Technology</string>
+				</dict>
+				<dict>
+					<key>Frequency</key>
+					<string>1600</string>
+					<key>Part</key>
+					<string>CT102464BF160B</string>
 					<key>Serial</key>
 					<string>Unknown</string>
 					<key>Size</key>
-					<string>8192</string>
+					<string>4096</string>
 					<key>Slot</key>
 					<string>0</string>
 					<key>Type</key>
 					<string>DDR3</string>
 					<key>Vendor</key>
-					<string>Hyundai Electronics</string>
+					<string>1315</string>
 				</dict>
 			</array>
 			<key>SlotCount</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<key>Mobile</key>
 		<true/>
 		<key>ProductName</key>
 		<string>MacBookAir7,2</string>
 		<key>SerialNumber</key>
-		<string>C1DXXXXXG942</string>
+		<string>C02QT1KVH569</string>
 		<key>Trust</key>
-		<false/>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
