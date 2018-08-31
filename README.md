@@ -1,5 +1,8 @@
 # Hackintosh
 
+## Desktop
+Issue: After updating Ubuntu, Clover will not boot
+Solution: In ubuntu, `sudo rm -rf /boot/efi/EFI`, `sudo cp -r /media/alberty/mac os.../EFI-backup/LATEST/EFI /boot/efi`
 
 ## OS 10.11.5
 Steps:
